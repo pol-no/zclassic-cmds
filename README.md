@@ -15,6 +15,8 @@ If you want to install zclassic-cmds in other rc file, just pass it as first agr
 
 EnJoY and add Star!
 
+### [Available commands](https://github.com/fxminer/zclassic-cmds/blob/master/zclassic-cmds-help)
+
 ### License
 [GNU GPLv3](http://www.gnu.org/licenses/gpl.html)
 
