@@ -2,7 +2,7 @@ alias ll='ls -alF'
 
 if [[ -z $ZCLASSIC_CONFIG_DIR ]]
 then
-    export =~/.zclassic
+    export ZCLASSIC_CONFIG_DIR=~/.zclassic
 fi
 if ! [[ -d $ZCLASSIC_CONFIG_DIR ]]
 then
