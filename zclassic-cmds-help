@@ -1,0 +1,28 @@
+
+  == ZClassic ==
+ 
+Available commands:
+zcash-cli            - Zcash commandline client
+
+zcl-send TO_ADDR AMOUNT           - Sends ZCLs (only t-addr)
+zcl-send FROM_ADDR TO_ADDR AMOUNT - Sends ZCLs (t-addr & z-addr support)
+
+zcl-status           - ZClassic blockchain & wallet status. Note: After first run you should wait for downloading all current blocks
+zcl-balance          - Total balance
+zcl-listaddrs        - Lists wallet addresses
+zcl-transactions     - Lists transactions
+zcl-transaction TXID - Gets single transaction status
+zcl-newaddr          - Gets new t-addr (public)
+zcl-newzaddr         - Gets new z-addr (anonymous)
+zcl-exportwallet     - Exports wallet to wallet.txt in /home/zcl/wallet directory
+zcl-showwallet       - Prints wallet in console
+zcl-connections      - Gets active connections
+zcl-operations       - Latest operations statuses
+zcl-config           - Shows zclassic.config
+zcl-logs             - Shows zclassic logs
+zcl-stop             - Stop zclassic daemon
+exit                 - Exit wallet
+
+Import wallet: zcash-cli z_importwallet FILE
+
+!!! Backup your wallet !!! - use 'zcl-exportwallet' command and copy file to secure location
