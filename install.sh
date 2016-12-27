@@ -6,9 +6,9 @@ then
     CONFIG=~/.bashrc
 fi
 
-if [[ `grep zclassic-cmds ~/.bashrc | wc -l` -eq 0 ]]
+if [[ `grep zclassic-cmds ${CONFIG} | wc -l` -eq 0 ]]
 then 
-    echo "Installing zclassic-cmds..."    
+    echo "Installing zclassic-cmds in ${CONFIG}..."    
     CMDS_DIR=$(dirname $(readlink -f $0))
 
     cat ${CMDS_DIR}/zclassic-cmds | sed -e "s;%CMDS_DIR%;${CMDS_DIR};g" > ~/zclassic-cmds
