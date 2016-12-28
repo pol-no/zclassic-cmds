@@ -18,8 +18,8 @@ zcl-exportwallet     - Exports wallet to wallet.txt in /home/zcl/wallet director
 zcl-showwallet       - Prints wallet in console
 zcl-connections      - Gets active connections
 zcl-operations       - Latest operations statuses
-zcl-config           - Shows zclassic.config
-zcl-logs             - Shows zclassic logs
+zcl-config           - Prints zclassic.config to console
+zcl-logs             - Prints ZClassic logs
 zcl-stop             - Stop ZClassic daemon
 exit                 - Stop ZClassic daemon and exit wallet
 
