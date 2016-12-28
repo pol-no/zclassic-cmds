@@ -7,7 +7,7 @@ zcash-cli            - Zcash commandline client
 zcl-send TO_ADDR AMOUNT           - Sends ZCLs (only t-addr)
 zcl-send FROM_ADDR TO_ADDR AMOUNT - Sends ZCLs (t-addr & z-addr support)
 
-zcl-status           - ZClassic blockchain & wallet status. Note: After first run you should wait for downloading all current blocks
+zcl-status           - ZClassic status. Note: After first run you should wait for downloading all current blocks
 zcl-balance          - Total balance
 zcl-listaddrs        - Lists wallet addresses
 zcl-transactions     - Lists transactions
