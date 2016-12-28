@@ -70,6 +70,6 @@ alias zcl-connections='zcash-cli getpeerinfo'
 alias zcl-operations='echo "Operations status:" && '\
 'zcash-cli z_getoperationstatus'
 
-alias zcl-logs='tail ${ZCLASSIC_CONFIG_DIR}/debug.log'
+alias zcl-logs='tail -20 ${ZCLASSIC_CONFIG_DIR}/debug.log'
 
 alias zcl-stop='zcash-cli stop'
