@@ -20,8 +20,8 @@ zcl-connections      - Gets active connections
 zcl-operations       - Latest operations statuses
 zcl-config           - Shows zclassic.config
 zcl-logs             - Shows zclassic logs
-zcl-stop             - Stop zclassic daemon
-exit                 - Exit wallet
+zcl-stop             - Stop ZClassic daemon
+exit                 - Stop ZClassic daemon and exit wallet
 
 Import wallet: zcash-cli z_importwallet FILE
 
