@@ -1,6 +1,6 @@
 # zclassic-cmds
 
-Set of useful command line commands and aliases for ZClassic wallet.
+Set of useful command line commands and aliases for ZClassic wallet. It is compatibile with Zcash.
 
 ### Prerequisites
 zcash-cli should be available in the path
