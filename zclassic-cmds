@@ -1,23 +1,17 @@
 alias ll='ls -alF'
 
-if [[ -z $ZCLASSIC_CONFIG_DIR ]]
+if [[ -z $ZCLASSIC_DATA_DIR ]]
 then
-    export ZCLASSIC_CONFIG_DIR=~/.zclassic
+    export ZCLASSIC_DATA_DIR=~/.zclassic
 fi
-if ! [[ -d $ZCLASSIC_CONFIG_DIR ]]
+if ! [[ -d $ZCLASSIC_DATA_DIR ]]
 then
-    mkdir -p $ZCLASSIC_CONFIG_DIR
-    chmod 777 $ZCLASSIC_CONFIG_DIR
+    mkdir -p $ZCLASSIC_DATA_DIR
+    chmod 777 $ZCLASSIC_DATA_DIR
 fi
-
 if [[ -z $WALLET_DIR ]]
 then
     export WALLET_DIR=~/wallet
-fi
-if ! [[ -d $ZCLASSIC_CONFIG_DIR ]]
-then
-    mkdir -p $ZCLASSIC_CONFIG_DIR
-    chmod 777 $ZCLASSIC_CONFIG_DIR
 fi
 
 ###################
@@ -63,13 +57,13 @@ alias zcl-newzaddr='zcash-cli z_getnewaddress'
 
 alias zcl-send='%CMDS_DIR%/send.sh'
 
-alias zcl-config='cat ${ZCLASSIC_CONFIG_DIR}/zclassic.conf'
+alias zcl-config='cat ${ZCLASSIC_DATA_DIR}/zclassic.conf'
 
 alias zcl-connections='zcash-cli getpeerinfo'
 
 alias zcl-operations='echo "Operations status:" && '\
 'zcash-cli z_getoperationstatus'
 
-alias zcl-logs='tail -20 ${ZCLASSIC_CONFIG_DIR}/debug.log'
+alias zcl-logs='tail -20 ${ZCLASSIC_DATA_DIR}/debug.log'
 
 alias zcl-stop='zcash-cli stop'
