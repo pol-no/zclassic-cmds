@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias ll='ls -alF'
 
 if [[ -z $ZCLASSIC_DATA_DIR ]]
@@ -21,49 +23,47 @@ fi
 alias zcl-help='cat %CMDS_DIR%/zclassic-cmds-help'
 
 alias zcl-balance='echo "Total balance:" && '\
-'zcash-cli z_gettotalbalance && '\
-'echo "Unspent (public coins):" && '\
-'zcash-cli listunspent'
+'zcash-cli ${ZCASHCLI_PARAMS} z_gettotalbalance && '\
+
+alias zcl-listunspent='echo "Unspent (public coins):" && zcash-cli ${ZCASHCLI_PARAMS} listunspent'
 
 alias zcl-exportwallet='echo "Exporting wallet..." && '\
-'zcash-cli z_exportwallet ${WALLET_DIR}/wallet.txt && '\
+'zcash-cli ${ZCASHCLI_PARAMS} z_exportwallet ${WALLET_DIR}/wallet.txt && '\
 'echo && '\
 'echo "Wallet saved in ${WALLET_DIR}/wallet.txt"'
 
 alias zcl-showwallet='zcl-exportwallet && '\
 'cat ${WALLET_DIR}/wallet.txt'
 
-alias zcl-transactions='zcash-cli listtransactions'
+alias zcl-transactions='zcash-cli ${ZCASHCLI_PARAMS} listtransactions'
 
-alias zcl-transaction='zcash-cli gettransaction'
+alias zcl-transaction='zcash-cli ${ZCASHCLI_PARAMS} gettransaction'
 
 alias zcl-listaddrs='echo "Anonymous addresses:" && '\
-'zcash-cli z_listaddresses && '\
-'echo "Unspent:" && '\
-'zcash-cli listunspent && '\
+'zcash-cli ${ZCASHCLI_PARAMS} z_listaddresses && '\
 'echo "Received by addresses:" && '\
-'zcash-cli listreceivedbyaddress 0 true'
+'zcash-cli ${ZCASHCLI_PARAMS} listreceivedbyaddress 0 true'
 
 alias zcl-status='zcl-listaddrs && '\
 'echo && '\
 'zcl-balance && '\
 'echo && '\
 'echo "Blockchain info:" && '\
-'zcash-cli getinfo'
+'zcash-cli ${ZCASHCLI_PARAMS} getinfo'
  
-alias zcl-newaddr='zcash-cli getnewaddress'
+alias zcl-newaddr='zcash-cli ${ZCASHCLI_PARAMS} getnewaddress'
 
-alias zcl-newzaddr='zcash-cli z_getnewaddress'
+alias zcl-newzaddr='zcash-cli ${ZCASHCLI_PARAMS} z_getnewaddress'
 
 alias zcl-send='%CMDS_DIR%/send.sh'
 
 alias zcl-config='cat ${ZCLASSIC_DATA_DIR}/zclassic.conf'
 
-alias zcl-connections='zcash-cli getpeerinfo'
+alias zcl-connections='zcash-cli ${ZCASHCLI_PARAMS} getpeerinfo'
 
 alias zcl-operations='echo "Operations status:" && '\
-'zcash-cli z_getoperationstatus'
+'zcash-cli ${ZCASHCLI_PARAMS} z_getoperationstatus'
 
 alias zcl-logs='tail -20 ${ZCLASSIC_DATA_DIR}/debug.log'
 
-alias zcl-stop='zcash-cli stop'
+alias zcl-stop='zcash-cli ${ZCASHCLI_PARAMS} stop'
