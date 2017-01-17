@@ -14,7 +14,7 @@ zcl-transactions     - Lists transactions
 zcl-transaction TXID - Gets single transaction status
 zcl-newaddr          - Gets new t-addr (public)
 zcl-newzaddr         - Gets new z-addr (anonymous)
-zcl-exportwallet     - Exports wallet to wallet.txt in /home/zcl/wallet directory
+zcl-backup           - Backups wallet to 7zip password protected file
 zcl-showwallet       - Prints wallet in console
 zcl-connections      - Gets active connections
 zcl-operations       - Latest operations statuses

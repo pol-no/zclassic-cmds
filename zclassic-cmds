@@ -23,14 +23,14 @@ fi
 alias zcl-help='cat %CMDS_DIR%/zclassic-cmds-help'
 
 alias zcl-balance='echo "Total balance:" && '\
-'zcash-cli ${ZCASHCLI_PARAMS} z_gettotalbalance && '\
+'zcash-cli ${ZCASHCLI_PARAMS} z_gettotalbalance'\
 
 alias zcl-listunspent='echo "Unspent (public coins):" && zcash-cli ${ZCASHCLI_PARAMS} listunspent'
 
-alias zcl-exportwallet='echo "Exporting wallet..." && '\
-'zcash-cli ${ZCASHCLI_PARAMS} z_exportwallet ${WALLET_DIR}/wallet.txt && '\
-'echo && '\
-'echo "Wallet saved in ${WALLET_DIR}/wallet.txt"'
+alias zcl-send='%CMDS_DIR%/send.sh'
+
+alias zcl-backup='%CMDS_DIR%/backup_wallet.sh'
+#TODO alias zcl-restore
 
 alias zcl-showwallet='zcl-exportwallet && '\
 'cat ${WALLET_DIR}/wallet.txt'

@@ -14,7 +14,7 @@ then
 
     cat ${CMDS_DIR}/zclassic-cmds | sed -e "s;%CMDS_DIR%;${CMDS_DIR};g" > ${CONFIG_DIR}/zclassic-cmds
     echo "# zclassic-cmds
-. ~/zclassic-cmds" >> $CONFIG
+    . ~/zclassic-cmds" >> $CONFIG
 else 
     echo "Skipping, zclassic-cmds is already installed."
 fi
