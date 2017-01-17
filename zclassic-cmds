@@ -11,9 +11,14 @@ then
     mkdir -p $ZCLASSIC_DATA_DIR
     chmod 777 $ZCLASSIC_DATA_DIR
 fi
-if [[ -z $WALLET_DIR ]]
+if [[ -z "$WALLET_DIR" ]]
 then
-    export WALLET_DIR=~/wallet
+    export WALLET_DIR=~/share
+fi
+if ! [[ -d "$WALLET_DIR" ]]
+then
+    mkdir -p "$WALLET_DIR"
+    chmod 777 "$WALLET_DIR"
 fi
 
 ###################
