@@ -30,7 +30,7 @@ alias zcl-listunspent='echo "Unspent (public coins):" && zcash-cli ${ZCASHCLI_PA
 alias zcl-send='%CMDS_DIR%/send.sh'
 
 alias zcl-backup='%CMDS_DIR%/backup_wallet.sh'
-#TODO alias zcl-restore
+alias zcl-backup='%CMDS_DIR%/restore_wallet.sh'
 
 alias zcl-showwallet='zcl-exportwallet && '\
 'cat ${WALLET_DIR}/wallet.txt'
