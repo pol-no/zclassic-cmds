@@ -19,6 +19,7 @@ zcl-showwallet       - Prints wallet in console
 zcl-connections      - Gets active connections
 zcl-operations       - Latest operations statuses
 zcl-config           - Prints zclassic.config to console
+zcl-archive          - Archive zclassic blocks and chainstate
 zcl-logs             - Prints ZClassic logs
 zcl-stop             - Stop ZClassic daemon
 exit                 - Stop ZClassic daemon and exit wallet

@@ -38,7 +38,7 @@ alias zcl-backup='%CMDS_DIR%/backup_wallet.sh'
 alias zcl-backup='%CMDS_DIR%/restore_wallet.sh'
 
 alias zcl-showwallet='zcl-exportwallet && '\
-'cat ${WALLET_DIR}/wallet.txt'
+'cat "${WALLET_DIR}/wallet.txt"'
 
 alias zcl-transactions='zcash-cli ${ZCASHCLI_PARAMS} listtransactions'
 
@@ -69,6 +69,8 @@ alias zcl-connections='zcash-cli ${ZCASHCLI_PARAMS} getpeerinfo'
 alias zcl-operations='echo "Operations status:" && '\
 'zcash-cli ${ZCASHCLI_PARAMS} z_getoperationstatus'
 
-alias zcl-logs='tail -20 ${ZCLASSIC_DATA_DIR}/debug.log'
+alias zcl-logs='tail -20 "${ZCLASSIC_DATA_DIR}/debug.log"'
 
 alias zcl-stop='zcash-cli ${ZCASHCLI_PARAMS} stop'
+
+alias zcl-archive='cd "${ZCLASSIC_DATA_DIR}" && 7z a "${WALLET_DIR}/zclassic-blocks" blocks chainstate'
