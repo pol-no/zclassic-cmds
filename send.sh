@@ -24,9 +24,9 @@ then
     if [[ $TXID =~ opid- ]]
     then
         echo "Operation ID: $TXID"
-        echo "Type: 'operations' to check operation status. After operation success type 'transactions' to check transaction status."
+        echo "Type: 'zcl-operations' to check operation status. After operation success type 'zcl-transactions' to check transaction status."
     else 
 	echo "Transaction ID (TXID): ${TXID}"
-	echo "Type: 'transaction ${TXID}' to check transaction status"
+	echo "Type: 'zcl-transaction ${TXID}' to check transaction status"
     fi
 fi
