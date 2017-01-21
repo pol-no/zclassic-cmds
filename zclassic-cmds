@@ -74,3 +74,6 @@ alias zcl-logs='tail -20 "${ZCLASSIC_DATA_DIR}/debug.log"'
 alias zcl-stop='zcash-cli ${ZCASHCLI_PARAMS} stop'
 
 alias zcl-archive='cd "${ZCLASSIC_DATA_DIR}" && 7z a "${WALLET_DIR}/zclassic-blocks" blocks chainstate'
+
+alias zcl-network='wget -qO- https://classic.api.zcha.in/v1/mainnet/network | python -m json.tool'
+
