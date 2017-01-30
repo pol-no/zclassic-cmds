@@ -78,6 +78,6 @@ echo
 echo "Welcome to ZClassic command line wallet"
 echo "  Type 'zcl-status' to get current status"
 echo "  Type 'zcl-help' for help"
-echo "  Type 'zcash-cli' to use zcash commandline client"
+echo "  Type 'zcash-cli' to ru zcash command line client"
 echo "  Type 'exit' to exit ZClassic"
 echo
