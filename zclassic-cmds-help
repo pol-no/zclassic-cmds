@@ -16,7 +16,7 @@ zcl-transaction TXID - Gets single transaction status
 zcl-newaddr          - Gets new t-addr (public)
 zcl-newzaddr         - Gets new z-addr (anonymous)
 zcl-backup           - Backups wallet to 7zip password protected file
-zcl-showwallet       - Prints wallet in console
+zcl-restore          - Restores wallet
 zcl-connections      - Gets active connections
 zcl-operations       - Latest operations statuses
 zcl-config           - Prints zclassic.config to console
@@ -27,4 +27,4 @@ exit                 - Stop ZClassic daemon and exit wallet
 
 Import wallet: zcash-cli z_importwallet FILE
 
-!!! Backup your wallet !!! - use 'zcl-exportwallet' command and copy file to secure location
+!!! Backup your wallet !!! - use 'zcl-backup' command and copy file to secure location

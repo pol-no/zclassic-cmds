@@ -5,6 +5,11 @@ if [[ -z $CONFIG ]]
 then
     CONFIG=~/.bashrc
 fi
+if ! [ -f "${CONFIG}" ]
+then
+    touch "${CONFIG}"
+fi
+
 CONFIG_DIR=$(dirname $(readlink -f ${CONFIG}))
 
 if [[ `grep zclassic-cmds ${CONFIG} | wc -l` -eq 0 ]]
