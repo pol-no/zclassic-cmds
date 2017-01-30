@@ -74,3 +74,10 @@ alias zcl-archive='cd "${ZCLASSIC_DATA_DIR}" && 7z a "${WALLET_DIR}/zclassic-blo
 
 alias zcl-network='wget -qO- https://classic.api.zcha.in/v1/mainnet/network | python -m json.tool'
 
+echo
+echo "Welcome to ZClassic command line wallet"
+echo "  Type 'zcl-status' to get current status"
+echo "  Type 'zcl-help' for help"
+echo "  Type 'zcash-cli' to use zcash commandline client"
+echo "  Type 'exit' to exit ZClassic"
+echo
